@@ -1,6 +1,6 @@
 {
-	"name": "Darkly77",
-	"namespace": "LimitProjectiles",
+	"name": "LimitProjectiles",
+	"namespace": "Darkly77",
 	"version_number": "1.0.0",
 	"description": "Limits the number of enemy projectiles that can be onscreen at once",
 	"website_url": "https://github.com/BrotatoMods/Darkly77-LimitProjectiles",
