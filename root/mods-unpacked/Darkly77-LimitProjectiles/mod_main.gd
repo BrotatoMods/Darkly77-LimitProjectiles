@@ -8,13 +8,13 @@ var ext_dir = ""
 
 
 func _init(modLoader = ModLoader):
-	ModLoaderUtils.log_info("Init", LIMITP_LOG)
+	ModLoaderLog.info("Init", LIMITP_LOG)
 
-	dir = modLoader.UNPACKED_DIR + MOD_DIR
+	dir = ModLoaderMod.get_unpacked_dir() + MOD_DIR
 	ext_dir = dir + "extensions/"
 
-	modLoader.install_script_extension(ext_dir + "entities/units/enemies/attack_behaviors/shooting_attack_behavior.gd")
+	ModLoaderMod.install_script_extension(ext_dir + "entities/units/enemies/attack_behaviors/shooting_attack_behavior.gd")
 
 
 func _ready()->void:
-	ModLoaderUtils.log_info("Ready", LIMITP_LOG)
+	ModLoaderLog.info("Ready", LIMITP_LOG)
